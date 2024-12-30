@@ -1,6 +1,6 @@
 import Experience from "../Experience.js";
 import Fox from "./Fox.js";
-
+import Village from "./Village.js";
 export default class World {
   constructor() {
     this.experience = new Experience();
@@ -11,6 +11,7 @@ export default class World {
     this.resources.on("ready", () => {
       // Setup
       this.fox = new Fox();
+     
     });
   }
 
